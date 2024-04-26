@@ -1,0 +1,18 @@
+const Sequelize=require("sequelize");
+const { DataTypes } = require("sequelize");
+const sequelize=require("./app");
+const Customer=sequelize.define("customer",{
+    id:{
+        type:Sequelize.INTEGER,
+        autoIncrement:true,
+        allowNull:false,
+        primarykey:true,
+    },
+    name:
+    {
+        type:Sequelize.STRING,
+        allowNull:false,
+    },
+    
+});
+module.exports=Customer;
