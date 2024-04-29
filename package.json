@@ -14,7 +14,7 @@
   },
   "name": "nodejstutorial",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "database.js",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon  app.js"
