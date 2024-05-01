@@ -1,5 +1,5 @@
 const db = require('./data');
-const { User, Article, Comment, Technology, Session } = require('./createTables');
+const { User, Article, Comment, Technology, Session,UserArticles,ArticleTechnology } = require('./createTables');
 //const db = require('./insertdata');
 
 async function deleteAllRows() {
@@ -13,7 +13,7 @@ async function deleteAllRows() {
     console.log('All rows deleted from the Users table');
 
     // Delete all rows from the Articles table
-    await Article.destroy({
+   await Article.destroy({
       where: {},
       //truncate: true
     });
